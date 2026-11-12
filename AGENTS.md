@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Application structure
+
+- Keep Lota's public-facing site as one editorial, anchor-navigated homepage so its supplied project journey, service overview, FAQs, and enquiry form remain a single visitor flow.
+- Accept public project enquiries through a validated TanStack server function and write them only through the server-side privileged client; never expose enquiry rows or grant anonymous table access, because submissions contain personal contact details.
